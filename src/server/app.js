@@ -9,7 +9,9 @@ var cors = require('cors');
 var graphqlHTTP = require('express-graphql');
 var {buildSchema} =require('graphql');
 
-
+/*********************************DATABSE CONFIG******************/
+var db = require('../../config/connection');
+db();
 
 
 var indexRouter = require('./routes/index');
